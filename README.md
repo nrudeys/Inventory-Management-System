@@ -12,7 +12,7 @@
 
 
 ## Getting Started
-### Technologies and libraries
+### Technologies
 
 ### How to Run
 
