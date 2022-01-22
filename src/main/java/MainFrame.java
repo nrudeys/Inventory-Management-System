@@ -198,17 +198,19 @@ public class MainFrame extends javax.swing.JFrame {
 
         clone.setAutoCreateRowSorter(true);
         clone.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][]{},
-                new String[]{
-                    "Title 1", "Title 2", "Title 3", "null"
-                }
+            new Object [][] {
+
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "null"
+            }
         ) {
-            boolean[] canEdit = new boolean[]{
+            boolean[] canEdit = new boolean [] {
                 false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit[columnIndex];
+                return canEdit [columnIndex];
             }
         });
         clone.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -221,28 +223,28 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout popupJFLayout = new javax.swing.GroupLayout(popupJF.getContentPane());
         popupJF.getContentPane().setLayout(popupJFLayout);
         popupJFLayout.setHorizontalGroup(
-                popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, popupJFLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(cloneSP, javax.swing.GroupLayout.DEFAULT_SIZE, 943, Short.MAX_VALUE)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, popupJFLayout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(puItemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(puSelIDBtn)))
-                                .addGap(30, 30, 30))
+            popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, popupJFLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cloneSP, javax.swing.GroupLayout.DEFAULT_SIZE, 943, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, popupJFLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(puItemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(puSelIDBtn)))
+                .addGap(30, 30, 30))
         );
         popupJFLayout.setVerticalGroup(
-                popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(popupJFLayout.createSequentialGroup()
-                                .addGap(50, 50, 50)
-                                .addComponent(cloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(puItemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(puSelIDBtn))
-                                .addGap(45, 45, 45))
+            popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(popupJFLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(cloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(popupJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(puItemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(puSelIDBtn))
+                .addGap(45, 45, 45))
         );
 
         analysisJF.setSize(new java.awt.Dimension(976, 520));
@@ -265,12 +267,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout catBarGraphPnlLayout = new javax.swing.GroupLayout(catBarGraphPnl);
         catBarGraphPnl.setLayout(catBarGraphPnlLayout);
         catBarGraphPnlLayout.setHorizontalGroup(
-                catBarGraphPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
+            catBarGraphPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         catBarGraphPnlLayout.setVerticalGroup(
-                catBarGraphPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 330, Short.MAX_VALUE)
+            catBarGraphPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 330, Short.MAX_VALUE)
         );
 
         salesBarPnl.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -280,12 +282,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout salesBarPnlLayout = new javax.swing.GroupLayout(salesBarPnl);
         salesBarPnl.setLayout(salesBarPnlLayout);
         salesBarPnlLayout.setHorizontalGroup(
-                salesBarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
+            salesBarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         salesBarPnlLayout.setVerticalGroup(
-                salesBarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 330, Short.MAX_VALUE)
+            salesBarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 330, Short.MAX_VALUE)
         );
 
         profitROIPnl.setAutoscrolls(true);
@@ -294,12 +296,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout profitROIPnlLayout = new javax.swing.GroupLayout(profitROIPnl);
         profitROIPnl.setLayout(profitROIPnlLayout);
         profitROIPnlLayout.setHorizontalGroup(
-                profitROIPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
+            profitROIPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         profitROIPnlLayout.setVerticalGroup(
-                profitROIPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 390, Short.MAX_VALUE)
+            profitROIPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
 
         platformPnl.setAutoscrolls(true);
@@ -308,12 +310,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout platformPnlLayout = new javax.swing.GroupLayout(platformPnl);
         platformPnl.setLayout(platformPnlLayout);
         platformPnlLayout.setHorizontalGroup(
-                platformPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
+            platformPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         platformPnlLayout.setVerticalGroup(
-                platformPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 390, Short.MAX_VALUE)
+            platformPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
 
         feesPnl.setAutoscrolls(true);
@@ -322,12 +324,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout feesPnlLayout = new javax.swing.GroupLayout(feesPnl);
         feesPnl.setLayout(feesPnlLayout);
         feesPnlLayout.setHorizontalGroup(
-                feesPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 0, Short.MAX_VALUE)
+            feesPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         feesPnlLayout.setVerticalGroup(
-                feesPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 390, Short.MAX_VALUE)
+            feesPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
 
         analysisYrCB.setToolTipText("Choose year");
@@ -350,50 +352,50 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout analysisPnlLayout = new javax.swing.GroupLayout(analysisPnl);
         analysisPnl.setLayout(analysisPnlLayout);
         analysisPnlLayout.setHorizontalGroup(
-                analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(analysisPnlLayout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                                        .addComponent(feesPnl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                                        .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                                        .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                                        .addComponent(salesBarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, analysisPnlLayout.createSequentialGroup()
-                                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(totProfitsLbl)
-                                                        .addComponent(totItemsLbl))
-                                                .addGap(480, 480, 480)
-                                                .addComponent(jLabel1)
-                                                .addGap(18, 18, 18)
-                                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(analysisYrCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(printAnalysisBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addGap(60, 60, 60))
+            analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(analysisPnlLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
+                    .addComponent(feesPnl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
+                    .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
+                    .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
+                    .addComponent(salesBarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, analysisPnlLayout.createSequentialGroup()
+                        .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(totProfitsLbl)
+                            .addComponent(totItemsLbl))
+                        .addGap(480, 480, 480)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(analysisYrCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(printAnalysisBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(60, 60, 60))
         );
         analysisPnlLayout.setVerticalGroup(
-                analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(analysisPnlLayout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(totItemsLbl)
-                                        .addComponent(jLabel1)
-                                        .addComponent(analysisYrCB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(totProfitsLbl)
-                                        .addComponent(printAnalysisBtn))
-                                .addGap(30, 30, 30)
-                                .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(salesBarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(feesPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+            analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(analysisPnlLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totItemsLbl)
+                    .addComponent(jLabel1)
+                    .addComponent(analysisYrCB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totProfitsLbl)
+                    .addComponent(printAnalysisBtn))
+                .addGap(30, 30, 30)
+                .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(salesBarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(feesPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         analysisSP.setViewportView(analysisPnl);
@@ -401,30 +403,30 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout analysisJFLayout = new javax.swing.GroupLayout(analysisJF.getContentPane());
         analysisJF.getContentPane().setLayout(analysisJFLayout);
         analysisJFLayout.setHorizontalGroup(
-                analysisJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(analysisSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 982, Short.MAX_VALUE)
+            analysisJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(analysisSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 982, Short.MAX_VALUE)
         );
         analysisJFLayout.setVerticalGroup(
-                analysisJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(analysisJFLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(analysisSP, javax.swing.GroupLayout.DEFAULT_SIZE, 2029, Short.MAX_VALUE)
-                                .addGap(20, 20, 20))
+            analysisJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(analysisJFLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(analysisSP, javax.swing.GroupLayout.DEFAULT_SIZE, 2029, Short.MAX_VALUE)
+                .addGap(20, 20, 20))
         );
 
         invtTitleLbl.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         invtTitleLbl.setText("INVENTORY TABLE");
 
         invtTableClone.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][]{
-                    {null, null, null, null},
-                    {null, null, null, null},
-                    {null, null, null, null},
-                    {null, null, null, null}
-                },
-                new String[]{
-                    "Title 1", "Title 2", "Title 3", "Title 4"
-                }
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
         ));
         invtTableClone.setAutoscrolls(false);
         invtCloneSP.setViewportView(invtTableClone);
@@ -433,15 +435,15 @@ public class MainFrame extends javax.swing.JFrame {
         salesTitleLbl.setText("SALES TABLE");
 
         salesTableClone.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][]{
-                    {null, null, null, null},
-                    {null, null, null, null},
-                    {null, null, null, null},
-                    {null, null, null, null}
-                },
-                new String[]{
-                    "Title 1", "Title 2", "Title 3", "Title 4"
-                }
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
         ));
         salesTableClone.setAutoscrolls(false);
         salesCloneSP.setViewportView(salesTableClone);
@@ -449,47 +451,47 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout printPnlLayout = new javax.swing.GroupLayout(printPnl);
         printPnl.setLayout(printPnlLayout);
         printPnlLayout.setHorizontalGroup(
-                printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(printPnlLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(invtCloneSP, javax.swing.GroupLayout.DEFAULT_SIZE, 1505, Short.MAX_VALUE)
-                                        .addGroup(printPnlLayout.createSequentialGroup()
-                                                .addGroup(printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(invtTitleLbl)
-                                                        .addComponent(salesTitleLbl))
-                                                .addGap(0, 0, Short.MAX_VALUE))
-                                        .addComponent(salesCloneSP))
-                                .addContainerGap())
+            printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(printPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(invtCloneSP, javax.swing.GroupLayout.DEFAULT_SIZE, 1505, Short.MAX_VALUE)
+                    .addGroup(printPnlLayout.createSequentialGroup()
+                        .addGroup(printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(invtTitleLbl)
+                            .addComponent(salesTitleLbl))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(salesCloneSP))
+                .addContainerGap())
         );
         printPnlLayout.setVerticalGroup(
-                printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, printPnlLayout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(invtTitleLbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(invtCloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(salesTitleLbl)
-                                .addGap(18, 18, 18)
-                                .addComponent(salesCloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            printPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, printPnlLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(invtTitleLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(invtCloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(salesTitleLbl)
+                .addGap(18, 18, 18)
+                .addComponent(salesCloneSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout printJFLayout = new javax.swing.GroupLayout(printJF.getContentPane());
         printJF.getContentPane().setLayout(printJFLayout);
         printJFLayout.setHorizontalGroup(
-                printJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(printJFLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(printPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            printJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(printJFLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(printPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         printJFLayout.setVerticalGroup(
-                printJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(printJFLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(printPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            printJFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(printJFLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(printPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         settingsDialog.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -531,34 +533,34 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout settingsDialogLayout = new javax.swing.GroupLayout(settingsDialog.getContentPane());
         settingsDialog.getContentPane().setLayout(settingsDialogLayout);
         settingsDialogLayout.setHorizontalGroup(
-                settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(settingsDialogLayout.createSequentialGroup()
-                                .addGap(47, 47, 47)
-                                .addGroup(settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(printSalesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(printInvtBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(clrTablesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(colorSettingsBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addContainerGap(45, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, settingsDialogLayout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(settingsLbl)
-                                .addGap(74, 74, 74))
+            settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(settingsDialogLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addGroup(settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(printSalesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(printInvtBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(clrTablesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(colorSettingsBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, settingsDialogLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(settingsLbl)
+                .addGap(74, 74, 74))
         );
         settingsDialogLayout.setVerticalGroup(
-                settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(settingsDialogLayout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(settingsLbl)
-                                .addGap(18, 18, 18)
-                                .addComponent(colorSettingsBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(clrTablesBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(printInvtBtn)
-                                .addGap(18, 18, 18)
-                                .addComponent(printSalesBtn)
-                                .addContainerGap(32, Short.MAX_VALUE))
+            settingsDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(settingsDialogLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(settingsLbl)
+                .addGap(18, 18, 18)
+                .addComponent(colorSettingsBtn)
+                .addGap(18, 18, 18)
+                .addComponent(clrTablesBtn)
+                .addGap(18, 18, 18)
+                .addComponent(printInvtBtn)
+                .addGap(18, 18, 18)
+                .addComponent(printSalesBtn)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -603,7 +605,7 @@ public class MainFrame extends javax.swing.JFrame {
         conditionLabel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         conditionLabel.setText("Condition:");
 
-        condCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"", "New", "Like New", "Good", "Fair", "Poor"}));
+        condCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "New", "Like New", "Good", "Fair", "Poor" }));
 
         quantityLbl.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         quantityLbl.setText("Total Quantity:");
@@ -669,113 +671,113 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout selItemIDPnlLayout = new javax.swing.GroupLayout(selItemIDPnl);
         selItemIDPnl.setLayout(selItemIDPnlLayout);
         selItemIDPnlLayout.setHorizontalGroup(
-                selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(selItemIDPnlLayout.createSequentialGroup()
-                                .addComponent(selectIDLbl)
-                                .addGap(35, 35, 35)
-                                .addComponent(selIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(selItemIDPnlLayout.createSequentialGroup()
+                .addComponent(selectIDLbl)
+                .addGap(35, 35, 35)
+                .addComponent(selIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         selItemIDPnlLayout.setVerticalGroup(
-                selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(selItemIDPnlLayout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addGroup(selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(selectIDLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(selIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 16, Short.MAX_VALUE))
+            selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(selItemIDPnlLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(selItemIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(selectIDLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout invtInputsLayout = new javax.swing.GroupLayout(invtInputs);
         invtInputs.setLayout(invtInputsLayout);
         invtInputsLayout.setHorizontalGroup(
-                invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, invtInputsLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(selItemIDPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(nameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(originalPriceLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(origPriceTF, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                                        .addComponent(nameTF))
-                                                .addGap(68, 68, 68)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(purchaseDateLbl)
-                                                        .addComponent(categoryLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(categoryTF)
-                                                        .addComponent(purchaseDC, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
-                                                .addGap(68, 68, 68)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(supplierLbl)
-                                                        .addComponent(sellingDateLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(sellingDC, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                                        .addComponent(supplierTF))
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                                .addGap(68, 68, 68)
-                                                                .addComponent(conditionLabel)
-                                                                .addGap(18, 18, 18)
-                                                                .addComponent(condCB, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addComponent(quantityLbl)
-                                                                .addGap(18, 18, 18)
-                                                                .addComponent(totalQtyTF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addComponent(delItemBtn)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(updtItemBtn)
-                                                                .addGap(0, 0, 0)
-                                                                .addComponent(addItemBtn)))))
-                                .addGap(30, 30, 30))
+            invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, invtInputsLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(selItemIDPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(invtInputsLayout.createSequentialGroup()
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(originalPriceLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(origPriceTF, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                            .addComponent(nameTF))
+                        .addGap(68, 68, 68)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(purchaseDateLbl)
+                            .addComponent(categoryLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(categoryTF)
+                            .addComponent(purchaseDC, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
+                        .addGap(68, 68, 68)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(supplierLbl)
+                            .addComponent(sellingDateLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(sellingDC, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                            .addComponent(supplierTF))
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(invtInputsLayout.createSequentialGroup()
+                                .addGap(68, 68, 68)
+                                .addComponent(conditionLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(condCB, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(quantityLbl)
+                                .addGap(18, 18, 18)
+                                .addComponent(totalQtyTF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(invtInputsLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(delItemBtn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(updtItemBtn)
+                                .addGap(0, 0, 0)
+                                .addComponent(addItemBtn)))))
+                .addGap(30, 30, 30))
         );
         invtInputsLayout.setVerticalGroup(
-                invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                .addComponent(selItemIDPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
+            invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(invtInputsLayout.createSequentialGroup()
+                .addComponent(selItemIDPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(supplierLbl)
+                    .addComponent(supplierTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(categoryLbl)
+                    .addComponent(categoryTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(conditionLabel)
+                    .addComponent(quantityLbl)
+                    .addComponent(nameLbl)
+                    .addComponent(condCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalQtyTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(invtInputsLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(invtInputsLayout.createSequentialGroup()
+                                .addComponent(sellingDateLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(1, 1, 1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(purchaseDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(supplierLbl)
-                                        .addComponent(supplierTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(categoryLbl)
-                                        .addComponent(categoryTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(conditionLabel)
-                                        .addComponent(quantityLbl)
-                                        .addComponent(nameLbl)
-                                        .addComponent(condCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(totalQtyTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                .addGap(30, 30, 30)
-                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                                .addComponent(sellingDateLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addGap(1, 1, 1))
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                .addComponent(purchaseDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                        .addComponent(originalPriceLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                        .addComponent(origPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                        .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                .addComponent(addItemBtn)
-                                                                .addComponent(updtItemBtn)
-                                                                .addComponent(delItemBtn))))
-                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                .addGap(27, 27, 27)
-                                                .addComponent(purchaseDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(invtInputsLayout.createSequentialGroup()
-                                                .addGap(29, 29, 29)
-                                                .addComponent(sellingDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(16, Short.MAX_VALUE))
+                                    .addComponent(originalPriceLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(origPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(invtInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(addItemBtn)
+                                .addComponent(updtItemBtn)
+                                .addComponent(delItemBtn))))
+                    .addGroup(invtInputsLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(purchaseDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(invtInputsLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(sellingDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         saleInputs.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -873,21 +875,21 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout selSaleIDPnlLayout = new javax.swing.GroupLayout(selSaleIDPnl);
         selSaleIDPnl.setLayout(selSaleIDPnlLayout);
         selSaleIDPnlLayout.setHorizontalGroup(
-                selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(selSaleIDPnlLayout.createSequentialGroup()
-                                .addComponent(saleSelIDLbl)
-                                .addGap(18, 18, 18)
-                                .addComponent(selSaleIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(selSaleIDPnlLayout.createSequentialGroup()
+                .addComponent(saleSelIDLbl)
+                .addGap(18, 18, 18)
+                .addComponent(selSaleIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         selSaleIDPnlLayout.setVerticalGroup(
-                selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, selSaleIDPnlLayout.createSequentialGroup()
-                                .addGap(15, 15, 15)
-                                .addGroup(selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(saleSelIDLbl)
-                                        .addComponent(selSaleIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(16, Short.MAX_VALUE))
+            selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, selSaleIDPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(selSaleIDPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(saleSelIDLbl)
+                    .addComponent(selSaleIDCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         sellingPriceLbl.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -920,95 +922,95 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout saleInputsLayout = new javax.swing.GroupLayout(saleInputs);
         saleInputs.setLayout(saleInputsLayout);
         saleInputsLayout.setHorizontalGroup(
-                saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(selSaleIDPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(saleInputsLayout.createSequentialGroup()
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(itemIDLabel)
-                                                        .addComponent(sellFeesLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addGroup(saleInputsLayout.createSequentialGroup()
-                                                                .addComponent(itemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(selItemIDBtn))
-                                                        .addComponent(sellFeesTF))
-                                                .addGap(44, 44, 44)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(processFeesLbl)
-                                                        .addComponent(custNameLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(custNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(processFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(44, 44, 44)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(shipFeesLbl)
-                                                        .addComponent(platformLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(shipFeesTF, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                                                        .addComponent(platformTF))
-                                                .addGap(44, 44, 44)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(qtySoldLbl)
-                                                        .addComponent(saleSellingSDLbl))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(saleSellingDC, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE)
-                                                        .addComponent(qtySoldTF))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addGroup(saleInputsLayout.createSequentialGroup()
-                                                                .addComponent(sellingPriceLbl)
-                                                                .addGap(14, 14, 14)
-                                                                .addComponent(sellingPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(saleInputsLayout.createSequentialGroup()
-                                                                .addComponent(delSaleBtn)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(updtSaleBtn)
-                                                                .addGap(0, 0, 0)
-                                                                .addComponent(addSaleBtn)))))
-                                .addGap(30, 30, 30))
+            saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(selSaleIDPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(saleInputsLayout.createSequentialGroup()
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itemIDLabel)
+                            .addComponent(sellFeesLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(saleInputsLayout.createSequentialGroup()
+                                .addComponent(itemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(selItemIDBtn))
+                            .addComponent(sellFeesTF))
+                        .addGap(44, 44, 44)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(processFeesLbl)
+                            .addComponent(custNameLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(custNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(processFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(44, 44, 44)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(shipFeesLbl)
+                            .addComponent(platformLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(shipFeesTF, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                            .addComponent(platformTF))
+                        .addGap(44, 44, 44)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(qtySoldLbl)
+                            .addComponent(saleSellingSDLbl))
+                        .addGap(18, 18, 18)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(saleSellingDC, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE)
+                            .addComponent(qtySoldTF))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(saleInputsLayout.createSequentialGroup()
+                                .addComponent(sellingPriceLbl)
+                                .addGap(14, 14, 14)
+                                .addComponent(sellingPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(saleInputsLayout.createSequentialGroup()
+                                .addComponent(delSaleBtn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(updtSaleBtn)
+                                .addGap(0, 0, 0)
+                                .addComponent(addSaleBtn)))))
+                .addGap(30, 30, 30))
         );
         saleInputsLayout.setVerticalGroup(
-                saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(saleInputsLayout.createSequentialGroup()
-                                .addGap(0, 0, 0)
-                                .addComponent(selSaleIDPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(selItemIDBtn)
-                                        .addComponent(itemIDLabel)
-                                        .addComponent(custNameLbl)
-                                        .addComponent(custNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(qtySoldTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(platformLbl)
-                                        .addComponent(platformTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(sellingPriceLbl)
-                                        .addComponent(qtySoldLbl)
-                                        .addComponent(sellingPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(itemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(delSaleBtn)
-                                                        .addComponent(updtSaleBtn)
-                                                        .addComponent(addSaleBtn))
-                                                .addComponent(saleSellingDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                .addComponent(saleSellingSDLbl)
-                                                .addComponent(shipFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(shipFeesLbl)
-                                                .addComponent(processFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(processFeesLbl)
-                                                .addComponent(sellFeesLbl)
-                                                .addComponent(sellFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(23, Short.MAX_VALUE))
+            saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saleInputsLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(selSaleIDPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(selItemIDBtn)
+                    .addComponent(itemIDLabel)
+                    .addComponent(custNameLbl)
+                    .addComponent(custNameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(qtySoldTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(platformLbl)
+                    .addComponent(platformTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sellingPriceLbl)
+                    .addComponent(qtySoldLbl)
+                    .addComponent(sellingPriceTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itemIDTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(delSaleBtn)
+                            .addComponent(updtSaleBtn)
+                            .addComponent(addSaleBtn))
+                        .addComponent(saleSellingDC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saleInputsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(saleSellingSDLbl)
+                        .addComponent(shipFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(shipFeesLbl)
+                        .addComponent(processFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(processFeesLbl)
+                        .addComponent(sellFeesLbl)
+                        .addComponent(sellFeesTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         tabbedPnl.setToolTipText("");
@@ -1022,24 +1024,26 @@ public class MainFrame extends javax.swing.JFrame {
         invtTable.setAutoCreateRowSorter(true);
         invtTable.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         invtTable.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][]{},
-                new String[]{
-                    "ID", "Name", "Category", "Supplier", "Condition", "Available Quantity", "Original Price", "Profit", "ROI (%)", "Purchase Date", "Latest Selling Date"
-                }
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "Category", "Supplier", "Condition", "Available Quantity", "Original Price", "Profit", "ROI (%)", "Purchase Date", "Latest Selling Date"
+            }
         ) {
-            Class[] types = new Class[]{
+            Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Double.class, java.lang.Double.class, java.lang.Double.class, java.lang.Object.class, java.lang.Object.class
             };
-            boolean[] canEdit = new boolean[]{
+            boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
-                return types[columnIndex];
+                return types [columnIndex];
             }
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit[columnIndex];
+                return canEdit [columnIndex];
             }
         });
         invtTable.setFillsViewportHeight(true);
@@ -1056,38 +1060,40 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout invtPnlLayout = new javax.swing.GroupLayout(invtPnl);
         invtPnl.setLayout(invtPnlLayout);
         invtPnlLayout.setHorizontalGroup(
-                invtPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(invtPnlLayout.createSequentialGroup()
-                                .addGap(0, 0, 0)
-                                .addComponent(invtSP, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE))
+            invtPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(invtPnlLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(invtSP, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE))
         );
         invtPnlLayout.setVerticalGroup(
-                invtPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(invtSP, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+            invtPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(invtSP, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
 
         tabbedPnl.addTab("Inventory", invtPnl);
 
         salesTable.setAutoCreateRowSorter(true);
         salesTable.setModel(new javax.swing.table.DefaultTableModel(
-                new Object[][]{},
-                new String[]{
-                    "ID", "Customer Name", "Item Name", "Platform", "Quantity Sold", "Selling Price", "Selling Fees", "Processing Fees", "Shipping Fees", "Selling Date"
-                }
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Customer Name", "Item Name", "Platform", "Quantity Sold", "Selling Price", "Selling Fees", "Processing Fees", "Shipping Fees", "Selling Date"
+            }
         ) {
-            Class[] types = new Class[]{
+            Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean[]{
+            boolean[] canEdit = new boolean [] {
                 false, false, false, false, true, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
-                return types[columnIndex];
+                return types [columnIndex];
             }
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit[columnIndex];
+                return canEdit [columnIndex];
             }
         });
         salesTable.setFillsViewportHeight(true);
@@ -1108,12 +1114,12 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout salePnlLayout = new javax.swing.GroupLayout(salePnl);
         salePnl.setLayout(salePnlLayout);
         salePnlLayout.setHorizontalGroup(
-                salePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(saleSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE)
+            salePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(saleSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE)
         );
         salePnlLayout.setVerticalGroup(
-                salePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(saleSP, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+            salePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(saleSP, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
         );
 
         tabbedPnl.addTab("Sales", salePnl);
@@ -1164,53 +1170,53 @@ public class MainFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(saleInputs, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE)
-                                        .addComponent(invtInputs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(titleLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(searchTF))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(searchBtn)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(addEntryBtn)
-                                                .addGap(51, 51, 51)
-                                                .addComponent(editEntryBtn)
-                                                .addGap(50, 50, 50)
-                                                .addComponent(analysisBtn)
-                                                .addGap(50, 50, 50)
-                                                .addComponent(settingsBtn))
-                                        .addComponent(tabbedPnl))
-                                .addGap(45, 45, 45))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(saleInputs, javax.swing.GroupLayout.DEFAULT_SIZE, 1451, Short.MAX_VALUE)
+                    .addComponent(invtInputs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(titleLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(searchTF))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(searchBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(addEntryBtn)
+                        .addGap(51, 51, 51)
+                        .addComponent(editEntryBtn)
+                        .addGap(50, 50, 50)
+                        .addComponent(analysisBtn)
+                        .addGap(50, 50, 50)
+                        .addComponent(settingsBtn))
+                    .addComponent(tabbedPnl))
+                .addGap(45, 45, 45))
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(titleLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(7, 7, 7)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(settingsBtn)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                .addComponent(analysisBtn)
-                                                .addComponent(editEntryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(addEntryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(4, 4, 4)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(searchTF)
-                                                        .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(invtInputs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(saleInputs, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(tabbedPnl)
-                                .addGap(20, 20, 20))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(titleLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(settingsBtn)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(analysisBtn)
+                        .addComponent(editEntryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(addEntryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(searchTF)
+                            .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(invtInputs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(saleInputs, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(tabbedPnl)
+                .addGap(20, 20, 20))
         );
 
         pack();
