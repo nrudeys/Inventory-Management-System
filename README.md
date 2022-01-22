@@ -37,9 +37,7 @@ This is done by clicking on the column name of either table. <br>
 Note: the inventory table profit and ROI column values are generated when inventory items are added into the sales 
 table.<br>
 <br>
-Example inventory table usage:<br>
-
-Example sales table usage:<br>
+See examples folder to see inventory/sales table usage<br>
 
 ### Analysis
 This feature uses the data presented in the tables to create category, sales, line/ROI, platform, and fees graphs
@@ -47,7 +45,7 @@ for a given year (selling date year). The also analysis provides information of 
 total profit generated. Users can then choose to print the results. The purpose of this feature is to display the
 data given in a meaningful manner.<br>
 <br>
-Example analysis usage:<br>
+See examples folder to see analysis usage<br>
 
  
 ### Settings
@@ -58,7 +56,7 @@ stored for the next session.<br>
 Clear Tables: Clears tables of all data<br>
 Print Inventory/Sales: Opens dialog for printing<br>
 <br>
-Example settings usage:<br>
+See examples folder to see settings usage<br>
 
 
 ## Acknowledgements
