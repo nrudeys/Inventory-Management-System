@@ -61,6 +61,6 @@ See examples folder to see settings usage<br>
 
 ## Acknowledgements
 * [Bandicam](https://www.bandicam.com/)
-* [Flaticon Inventory icons created by Nhor Phai](https://www.flaticon.com/free-icons/inventory)
-* [Launch4j] (http://launch4j.sourceforge.net/)
+* [Flaticon - Inventory icons created by Nhor Phai](https://www.flaticon.com/free-icons/inventory)
+* [Launch4j](http://launch4j.sourceforge.net/)
 * [MVNRepository](https://mvnrepository.com/)
