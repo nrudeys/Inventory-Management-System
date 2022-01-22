@@ -54,7 +54,7 @@ public class MainFrame extends javax.swing.JFrame {
      * @throws java.io.FileNotFoundException File was not found
      * @throws java.text.ParseException Unable to parse data
      */
-    public MainFrame() throws SQLException, FileNotFoundException, ParseException, 
+    public MainFrame() throws SQLException, FileNotFoundException, ParseException,
             BackingStoreException {
 
         initComponents();
