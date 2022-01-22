@@ -207,7 +207,7 @@ public class MainFrameSQLHelpers {
             stmt.clearParameters();
 
             // Updating corresponding JTable
-            table.setValueAt(String.valueOf(i), i - 1, 0);
+            table.setValueAt(i, i - 1, 0);
         }
 
         stmt.close();

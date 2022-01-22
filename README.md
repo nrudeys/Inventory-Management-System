@@ -27,8 +27,26 @@ In the terminal, paste: git clone https://github.com/nrudeys/Inventory-Managemen
 <br>Alternatively, download the repository as a zip file and locate/open IMSys.exe 
 
 ## Usage
-### Documentation
-* [Javadoc](C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\target\site\apidocs\package-summary.html)
+### Tables
+In the inventory and sales tables, users can SELECT, INSERT, UPDATE, and DELETE an entry. 
+These features are access through the Add and Edit buttons located in the upper right of the application. 
+Additionally, both tables can be sorted by columns either in ascending or descending order. 
+This is done by clicking on the column name of either table. 
+<br> 
+Note: the inventory table profit and ROI column values are generated when inventory items are added into the sales 
+table. 
+<br>
+Example usage:<br>
+
+
+### Analysis
+This
+ 
+### Settings
+
 
 ## Acknowledgements
-
+* [Flaticon - Inventory icons created by Nhor Phai](https://www.flaticon.com/free-icons/inventory)
+* [Launch4j] (http://launch4j.sourceforge.net/)
+* [MVNRepository](https://mvnrepository.com/)
+* [Screen-O-Matic](https://screencast-o-matic.com/)
