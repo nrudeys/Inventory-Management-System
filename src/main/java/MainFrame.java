@@ -354,36 +354,42 @@ public class MainFrame extends javax.swing.JFrame {
         analysisPnlLayout.setHorizontalGroup(
             analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(analysisPnlLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addGap(45, 45, 45)
                 .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                    .addComponent(feesPnl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                    .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                    .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                    .addComponent(salesBarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 965, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, analysisPnlLayout.createSequentialGroup()
+                    .addGroup(analysisPnlLayout.createSequentialGroup()
+                        .addComponent(feesPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 1034, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(analysisPnlLayout.createSequentialGroup()
                         .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(totProfitsLbl)
-                            .addComponent(totItemsLbl))
-                        .addGap(480, 480, 480)
+                            .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE)
+                            .addComponent(salesBarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE)
+                            .addComponent(profitROIPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE)
+                            .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, analysisPnlLayout.createSequentialGroup()
+                                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(totItemsLbl)
+                                    .addComponent(totProfitsLbl))
+                                .addGap(164, 687, Short.MAX_VALUE)))
+                        .addGap(60, 60, 60))
+                    .addGroup(analysisPnlLayout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(analysisYrCB, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(printAnalysisBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(60, 60, 60))
+                        .addComponent(analysisYrCB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(printAnalysisBtn)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         analysisPnlLayout.setVerticalGroup(
             analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(analysisPnlLayout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(totItemsLbl)
-                    .addComponent(jLabel1)
-                    .addComponent(analysisYrCB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(totItemsLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(totProfitsLbl)
+                .addGap(18, 18, 18)
                 .addGroup(analysisPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(totProfitsLbl)
+                    .addComponent(jLabel1)
+                    .addComponent(analysisYrCB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(printAnalysisBtn))
                 .addGap(30, 30, 30)
                 .addComponent(catBarGraphPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -394,8 +400,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(platformPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(feesPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(feesPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE))
         );
 
         analysisSP.setViewportView(analysisPnl);
@@ -576,6 +581,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         searchTF.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         searchTF.setToolTipText("Search for entries in displayed table. Empty search resets table.");
+        searchTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchTFActionPerformed(evt);
+            }
+        });
         searchTF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 searchTFKeyPressed(evt);
@@ -1681,6 +1691,7 @@ public class MainFrame extends javax.swing.JFrame {
      */
     private void analysisBtnClicked(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_analysisBtnClicked
         if (analysisYrCB.getSelectedItem() != null) {
+
             String year = analysisYrCB.getSelectedItem().toString();
 
             // Bar graph of most common category across months for given year
@@ -1710,8 +1721,8 @@ public class MainFrame extends javax.swing.JFrame {
             analysisJF.setVisible(true);
             analysisJF.setLocationRelativeTo(null);
         } else {
-            JOptionPane.showMessageDialog(null, "Cannot analyze data", "Error Message",
-                    JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Cannot analyze data, no selling dates listed",
+                    "Error Message", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_analysisBtnClicked
 
@@ -1897,15 +1908,17 @@ public class MainFrame extends javax.swing.JFrame {
      * @param evt Event from clicking clear tables button (button in settings)
      */
     private void clrTablesBtnClicked(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrTablesBtnClicked
-        try {
-            mainSQLHelpers.clearTableSQL(invtTable, selIDCB);
-            mainSQLHelpers.clearTableSQL(salesTable, selIDCB);
-            JOptionPane.showMessageDialog(null,
-                    "Tables successfully cleared");
-        } catch (SQLException ex) {
-            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, "Unable to clear tables", "Error Message",
-                    JOptionPane.ERROR_MESSAGE);
+        if (JOptionPane.showConfirmDialog(null, "Clear both tables?") == 0) {
+            try {
+                mainSQLHelpers.clearTableSQL(invtTable, selIDCB);
+                mainSQLHelpers.clearTableSQL(salesTable, selIDCB);
+                JOptionPane.showMessageDialog(null,
+                        "Tables successfully cleared");
+            } catch (SQLException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+                JOptionPane.showMessageDialog(null, "Unable to clear tables", "Error Message",
+                        JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_clrTablesBtnClicked
 
@@ -1955,15 +1968,17 @@ public class MainFrame extends javax.swing.JFrame {
      * row id and closes table.
      */
     private void cloneTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cloneTableMouseClicked
-        int selRow = clone.getSelectedRow();
+        int id = (Integer) clone.getModel().getValueAt(
+                clone.convertRowIndexToModel(clone.getSelectedRow()), 0);
         String sd;
 
         if (evt.getClickCount() == 1) {
-            puItemIDTF.setText(String.valueOf(selRow + 1));
-        } else if (evt.getClickCount() == 2) {
-            itemIDTF.setText(String.valueOf(selRow + 1));
 
-            if ((sd = (String) invtTable.getValueAt(selRow, 10)) != null) {
+            puItemIDTF.setText(String.valueOf(id));
+        } else if (evt.getClickCount() == 2) {
+            itemIDTF.setText(String.valueOf(id));
+
+            if ((sd = (String) invtTable.getValueAt(id - 1, 10)) != null) {
                 try {
                     saleSellingDC.setDate(new SimpleDateFormat("yyyy-MM-dd").parse(sd));
                 } catch (ParseException ex) {
@@ -1982,6 +1997,10 @@ public class MainFrame extends javax.swing.JFrame {
             Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_mainFrameWindowClosing
+
+    private void searchTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchTFActionPerformed
 
     /**
      * This method is used to append all the unique years that appear in the inventory and sales
@@ -2021,7 +2040,6 @@ public class MainFrame extends javax.swing.JFrame {
                 years.add(Integer.valueOf(yr.substring(0, 4)));
             }
         }
-
         return years;
     }
 
@@ -2288,7 +2306,7 @@ public class MainFrame extends javax.swing.JFrame {
         totItemsLbl.setText(totItemsLbl.getText() + " " + String.valueOf(mainSQLHelpers.selectTotalQtySumSQL()));
 
         totProfitsLbl.setText(totProfitsLbl.getText() + " "
-                + new DecimalFormat("0.00").format(mainSQLHelpers.selectProfitSumSQL() / 100));
+                + new DecimalFormat("0.00").format(mainSQLHelpers.selectProfitSumSQL() / 100.0));
     }
 
     /**
@@ -2306,6 +2324,9 @@ public class MainFrame extends javax.swing.JFrame {
         settingsDialog.getContentPane().setBackground(color);
     }
 
+//    public void setItemAnalysisYrCB(String item) {
+//        analysisYrCB.
+//    }
     /**
      * Retrieves the analysis Panel
      *

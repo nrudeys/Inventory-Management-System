@@ -393,9 +393,10 @@ public class MainFrameHelpers {
             invtTable.setValueAt(roi, itemIDIdx, 8);
         }
 
+        System.out.println("SD: " + sd);
         if (sd != null) {
-            if ((invtSD = invtTable.getValueAt(itemIDIdx, 10)) != null
-                    && (sd.compareTo(invtSD.toString()) > 0)) {
+            if ((invtSD = invtTable.getValueAt(itemIDIdx, 10)) == null
+                    || (invtSD != null && (sd.compareTo(invtSD.toString()) > 0))) {
                 // Update latest selling date
                 mainSQLHelpers.updtSDSQL(invtTable, itemIDIdx, sd);
                 invtTable.setValueAt(sd, itemIDIdx, 10);
@@ -431,7 +432,6 @@ public class MainFrameHelpers {
 
         return -1;
     }
-
 
     /**
      * After updating selling date of a row. Insert year into analysis year combo box if year is

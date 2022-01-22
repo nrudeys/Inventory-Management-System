@@ -145,28 +145,37 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="catBarGraphPnl" pref="965" max="32767" attributes="0"/>
-                              <Component id="feesPnl" alignment="1" pref="965" max="32767" attributes="0"/>
-                              <Component id="platformPnl" alignment="0" pref="965" max="32767" attributes="0"/>
-                              <Component id="profitROIPnl" alignment="0" pref="965" max="32767" attributes="0"/>
-                              <Component id="salesBarPnl" alignment="0" pref="965" max="32767" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="feesPnl" pref="1034" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="totProfitsLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="totItemsLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="catBarGraphPnl" pref="980" max="32767" attributes="0"/>
+                                      <Component id="salesBarPnl" alignment="0" pref="980" max="32767" attributes="0"/>
+                                      <Component id="profitROIPnl" alignment="0" pref="980" max="32767" attributes="0"/>
+                                      <Component id="platformPnl" alignment="0" pref="980" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="totItemsLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="totProfitsLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="164" pref="687" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="480" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="analysisYrCB" max="32767" attributes="0"/>
-                                      <Component id="printAnalysisBtn" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="analysisYrCB" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="printAnalysisBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -174,14 +183,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="totItemsLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="totProfitsLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="totItemsLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="analysisYrCB" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="totProfitsLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="printAnalysisBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -192,9 +200,8 @@
                           <Component id="profitROIPnl" pref="390" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="platformPnl" pref="390" max="32767" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Component id="feesPnl" pref="390" max="32767" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -678,6 +685,7 @@
         <Property name="toolTipText" type="java.lang.String" value="Search for entries in displayed table. Empty search resets table."/>
       </Properties>
       <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchTFActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="searchTFKeyPressed"/>
       </Events>
     </Component>

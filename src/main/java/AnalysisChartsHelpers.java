@@ -54,6 +54,7 @@ public class AnalysisChartsHelpers {
 
         // Gather data
         for (int i = 0; i < invtTable.getRowCount(); i++) {
+            System.out.println(invtTable.getValueAt(i, 10));
             if ((yr = (String) invtTable.getValueAt(i, 10)) != null
                     && yr.substring(0, 4).equals(year)) {
                 if ((cat = (String) invtTable.getValueAt(i, 2)) == null) {
@@ -73,6 +74,8 @@ public class AnalysisChartsHelpers {
 
         values.put("Unspecified", cnt);
 
+        System.out.println(values);
+        
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
         // Populate dataset

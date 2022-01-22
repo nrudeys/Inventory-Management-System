@@ -284,3 +284,141 @@ Launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
 Launcher args:	-jar "C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe"
 Args length:	91/32768 chars
 Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Error:		Instance already exists.
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Error:		Instance already exists.
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Working dir:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\.
+Java min ver:	1.007.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_321
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000_321
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+Check:		SOFTWARE\JavaSoft\JRE\10.0.2
+Check launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe (OK)
+Match:		1.010.000_002
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\10.0.2
+Ignore:		1.010.000_002
+Runtime used:	1.010.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+Launcher args:	-jar "C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe"
+Args length:	91/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Working dir:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\.
+Java min ver:	1.007.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_321
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000_321
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+Check:		SOFTWARE\JavaSoft\JRE\10.0.2
+Check launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe (OK)
+Match:		1.010.000_002
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\10.0.2
+Ignore:		1.010.000_002
+Runtime used:	1.010.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+Launcher args:	-jar "C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe"
+Args length:	91/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Working dir:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\.
+Java min ver:	1.007.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_321
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000_321
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+Check:		SOFTWARE\JavaSoft\JRE\10.0.2
+Check launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe (OK)
+Match:		1.010.000_002
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\10.0.2
+Ignore:		1.010.000_002
+Runtime used:	1.010.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+Launcher args:	-jar "C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe"
+Args length:	91/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe --l4j-debug
+WOW64:		yes
+Create mutex:	Inventory Management System
+Working dir:	C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\.
+Java min ver:	1.007.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_321
+Check launcher:	C:\Program Files\Java\jre1.8.0_321\bin\javaw.exe (not found)
+Ignore:		1.008.000_321
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+Check:		SOFTWARE\JavaSoft\JRE\10.0.2
+Check launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe (OK)
+Match:		1.010.000_002
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\10.0.2
+Ignore:		1.010.000_002
+Runtime used:	1.010.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jre-10.0.2\bin\javaw.exe
+Launcher args:	-jar "C:\Users\shahn\OneDrive\Documents\NetBeansProjects\InventoryManagementSystem\IMS.exe"
+Args length:	91/32768 chars
+Exit code:	0
