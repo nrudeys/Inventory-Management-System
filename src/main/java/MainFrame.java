@@ -62,8 +62,8 @@ public class MainFrame extends javax.swing.JFrame {
         // Setup connection to SQLite DB
         con = DriverManager.getConnection("jdbc:sqlite:IMS.db");
 
-        mainHelpers = new MainFrameHelpers(this, mainSQLHelpers, invtTable, salesTable, clone);
         mainSQLHelpers = new MainFrameSQLHelpers(con, this, invtTable);
+        mainHelpers = new MainFrameHelpers(this, mainSQLHelpers, invtTable, salesTable, clone);
         acHelpers = new AnalysisChartsHelpers(invtTable, salesTable);
 
         // Set user input fields invisible
@@ -1342,11 +1342,12 @@ public class MainFrame extends javax.swing.JFrame {
         if (selIDCB.getSelectedItem() != null) {
             setSelBtnCtrls(true, delItemBtn, updtItemBtn);
 
-            int id = Integer.parseInt(selIDCB.getSelectedItem().toString()), col = 1;
+            int id = invtTable.convertRowIndexToModel(
+                    Integer.parseInt(selIDCB.getSelectedItem().toString()) - 1), col = 1;
             Object val;
 
             for (Component c : getInvtInputCompts()) {
-                if ((val = invtTable.getValueAt(id - 1, col)) != null) {
+                if ((val = invtTable.getValueAt(id, col)) != null) {
                     try {
                         mainHelpers.setValuesInvtInputs(c, col, val);
                     } catch (ParseException ex) {
@@ -1391,7 +1392,7 @@ public class MainFrame extends javax.swing.JFrame {
                 salesTable.getRowCount() + 1);
         String sd = (String) salesFields[9];
 
-        if (mainHelpers.verifySalesInputVals((String) salesFields[1], sd)) {
+        if (mainHelpers.verifySalesInputVals((Integer) salesFields[2], sd)) {
             try (PreparedStatement stmt = con.prepareStatement(
                     "INSERT INTO sales VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
                 mainSQLHelpers.setFieldsSalesSQL(stmt, salesFields);
@@ -1416,7 +1417,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void updtSaleSQL(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updtSaleSQL
         int saleID = Integer.valueOf(selSaleIDCB.getSelectedItem().toString());
         Object[] inputs = mainHelpers.getSalesInputComptsValues(getSaleInputCompts(), saleID);
-        String itemID = (String) inputs[1], sd = (String) inputs[8];
+        Integer itemID = (Integer) inputs[2];
+        String sd = (String) inputs[8];
 
         if (mainHelpers.verifySalesInputVals(itemID, sd)) {
             int rowIndx = mainHelpers.locateTableIDRow((DefaultTableModel) salesTable.getModel(),
@@ -1506,14 +1508,14 @@ public class MainFrame extends javax.swing.JFrame {
             setSelBtnCtrls(true, delSaleBtn, updtSaleBtn);
             setInputsEnabled(true);
 
-            int id = Integer.parseInt(selSaleIDCB.getSelectedItem().toString()),
-                    col = 1;
+            int id = salesTable.convertRowIndexToModel(
+                    Integer.parseInt(selSaleIDCB.getSelectedItem().toString()) - 1), col = 1;
 
             String itemID = null;
             Object val;
 
             try {
-                itemID = mainSQLHelpers.selectItemIDSaleSQL(id);
+                itemID = mainSQLHelpers.selectItemIDSaleSQL(id + 1);
             } catch (SQLException ex) {
                 Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                 JOptionPane.showMessageDialog(null, "Error retrieving item ID.",
@@ -1521,7 +1523,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
 
             for (Component c : getSaleInputCompts()) {
-                val = (col != 2 ? salesTable.getValueAt(id - 1, col)
+                val = (col != 2 ? salesTable.getValueAt(id, col)
                         : itemID);
 
                 if (val != null) {
@@ -1852,7 +1854,7 @@ public class MainFrame extends javax.swing.JFrame {
      * @param evt Event from losing focus from itemIDTF
      */
     private void itemIDTFFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_itemIDTFFocusLost
-        if (!itemIDTF.isEditValid()) {
+        if (!itemIDTF.isEditValid() || itemIDTF.getText().trim().isEmpty()) {
             itemIDTF.setValue(null);
         } else {
             String sd;
@@ -1974,7 +1976,11 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_cloneTableMouseClicked
 
     private void mainFrameWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_mainFrameWindowClosing
-        // TODO add your handling code here:
+        try {
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_mainFrameWindowClosing
 
     /**

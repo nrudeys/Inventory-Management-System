@@ -263,15 +263,15 @@ public class MainFrameHelpers {
      * @param sd Selling date
      * @return true if inputs are valid, false otherwise
      */
-    public boolean verifySalesInputVals(String itemID, String sd) {
+    public boolean verifySalesInputVals(Integer itemID, String sd) {
         String errMessage = "";
 
-        if (itemID.trim().equals("")) {
+        if (itemID == null) {
             errMessage = "Item ID required";
         } else if (invtTable.getRowCount() == 0) {
             errMessage = "Item is not in inventory table";
         } else {
-            String pd = (String) invtTable.getValueAt(Integer.valueOf(itemID) - 1, 9);
+            String pd = (String) invtTable.getValueAt(itemID - 1, 9);
 
             if (sd != null && pd != null && sd.compareTo(pd) < 0) {
                 errMessage = "Purchase date cannot be more than selling date. Refer to inventory "
@@ -367,14 +367,14 @@ public class MainFrameHelpers {
         ((DefaultTableModel) salesTable.getModel()).addRow(values);
 
         int itemIDIdx = Integer.valueOf(mainFrame.getItemIDTF().getText()) - 1,
-                qtySold = values[4] == null ? 1 : (int) values[4];
+                qtySold = values[4] == null ? 1 : (Integer) values[4];
         Object quantity, invtSD;
         Double op = (Double) invtTable.getValueAt(itemIDIdx, 6), sp = (Double) values[5],
                 profit = (Double) invtTable.getValueAt(itemIDIdx, 7);
 
-        if ((quantity = invtTable.getValueAt(itemIDIdx, 5)) != null) {
+        if ((quantity = (Integer) invtTable.getValueAt(itemIDIdx, 5)) != null) {
             // Decrement inventory total quantity
-            mainSQLHelpers.updtInvtQtyField(itemIDIdx + 1, (int) quantity - qtySold);
+            mainSQLHelpers.updtInvtQtyField(itemIDIdx + 1, ((Integer) quantity - qtySold));
             invtTable.setValueAt((int) quantity - qtySold, itemIDIdx, 5);
         }
 
@@ -416,21 +416,22 @@ public class MainFrameHelpers {
     }
 
     /**
-     * Retrieve the ID column value of the given table and row index.
+     * Retrieve the row index of the given table and ID.
      *
      * @param table Table to search
-     * @param rowIndx Index of row
-     * @return ID number
+     * @param ID Index of row
+     * @return row index number or -1 if not found
      */
-    public int locateTableIDRow(DefaultTableModel table, int rowIndx) {
+    public int locateTableIDRow(DefaultTableModel table, int ID) {
         for (int i = 0; i < table.getRowCount(); i++) {
-            if (Integer.parseInt(table.getValueAt(i, 0).toString()) == rowIndx) {
+            if (Integer.parseInt(table.getValueAt(i, 0).toString()) == ID) {
                 return i;
             }
         }
 
         return -1;
     }
+
 
     /**
      * After updating selling date of a row. Insert year into analysis year combo box if year is

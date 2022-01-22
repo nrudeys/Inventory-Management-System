@@ -222,7 +222,7 @@ public class MainFrameSQLHelpers {
      * @param qty Update value
      * @throws java.sql.SQLException JDBC error occurred
      */
-    public void updtInvtQtyField(int id, int qty) throws SQLException {
+    public void updtInvtQtyField(Integer id, Integer qty) throws SQLException {
         PreparedStatement stmt = con.prepareStatement("UPDATE inventory SET qty = ? WHERE id = ?");
 
         stmt.setInt(1, qty);
